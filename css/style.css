@@ -1,0 +1,41 @@
+.header{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.navbar{
+    width: 100%;
+    display: flex;
+    border-radius: 20px;
+    margin-top: 25px;
+    background-color: #e0dede;
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+    background-color: #92140C;
+    border-radius: 10px;
+    position: absolute;
+}
+
+.navbar-brand-l{
+    margin-left: 225px;
+}
+
+.navbar-brand-r{
+    margin-right: 225px;
+}
+
+.nav-l{
+    display: flex;
+    justify-content: left;
+    width: 50%;
+}
+
+.nav-r{
+    display: flex;
+    justify-content: right;
+    width: 50%;
+}
