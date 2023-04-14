@@ -21,7 +21,64 @@
                 </div>
                 <div class="nav-r">
                     <a class="navbar-brand navbar-brand-r" href="#">Referenze</a>
-                    <button type="button" class="btn btn-outline-danger navbar-brand navbar-brand-r ">Contattaci</button>
+                    <button type="button" class="btn btn-outline-danger navbar-brand navbar-brand-r " data-toggle="modal" data-target="#myModal" id='contact'>Contattaci</button>
+                    <div class="modal fade" id="myModal" role="dialog">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Prenota un appuntamento</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <form method="post" action="./pages/request.php">
+                              <div class="form-group">
+                                <label for="recipient-name" class="col-form-label">Email:</label>
+                                <input type="text" class="form-control" id="recipient-name" name="email" require>
+                              </div>
+                              <div class="form-group">
+                                <label for="recipient-name" class="col-form-label">Nome del locale:</label>
+                                <input type="text" class="form-control" id="recipient-name" name="name" require>
+                              </div>
+                              <div class="form-group">
+                                <label for="regione" class="col-form-label">Regione:</label>
+                                <select name="regione" id="regione">
+                                </select>
+                              </div>
+                              <div class="form-group">
+                                <label for="recipient-name" class="col-form-label">Provincia:</label>
+                                <select name="provincia" id="recipient-name" disabled>
+                                </select>
+                              </div>
+                              <div class="form-group">
+                                <label for="recipient-name" class="col-form-label">Comune:</label>
+                                <select name="comune" id="recipient-name" disabled>
+                                </select>
+                              </div>
+                              <div class="form-group">
+                                <label for="recipient-name" class="col-form-label">Via:</label>
+                                <input type="text" class="form-control" id="recipient-name" name="address" require>
+                              </div>
+                              <div class="form-group">
+                                <label for="recipient-name" class="col-form-label">Numero civico:</label>
+                                <input type="number" class="form-control" id="recipient-name" name="civilNumber" require>
+                              </div>
+                              <div class="form-group">
+                                <label for="recipient-name" class="col-form-label">Oggetto:</label>
+                                <input type="text" class="form-control" id="recipient-name" name="object" require>
+                              </div>
+                              <div class="form-group">
+                                <label for="message-text" class="col-form-label">Richiesta:</label>
+                                <textarea class="form-control" id="message-text" name="request" require></textarea>
+                              </div>
+                            </form>
+                          </div>
+                          <div class="modal-footer">
+                            <input type="submit" class="btn btn-outline-danger" value="Richiedi">
+                          </div>
+                        </div>
+                    </div>
                 </div>
             </nav>
             <div class="logo">
@@ -33,6 +90,7 @@
 
         </div>
     </div>
+
     <script src="js/myjs.js"></script>
 </body>
 </html>
