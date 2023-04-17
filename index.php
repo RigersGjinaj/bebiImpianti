@@ -47,13 +47,13 @@
                                 </select>
                               </div>
                               <div class="form-group">
-                                <label for="recipient-name" class="col-form-label">Provincia:</label>
-                                <select name="provincia" id="recipient-name" disabled>
+                                <label for="provincia" class="col-form-label">Provincia:</label>
+                                <select name="provincia" id="provincia" disabled>
                                 </select>
                               </div>
                               <div class="form-group">
-                                <label for="recipient-name" class="col-form-label">Comune:</label>
-                                <select name="comune" id="recipient-name" disabled>
+                                <label for="comune" class="col-form-label">Comune:</label>
+                                <select name="comune" id="comune" disabled>
                                 </select>
                               </div>
                               <div class="form-group">
@@ -65,6 +65,10 @@
                                 <input type="number" class="form-control" id="recipient-name" name="civilNumber" require>
                               </div>
                               <div class="form-group">
+                                <label for="recipient-name" class="col-form-label">Interno:</label>
+                                <input type="text" class="form-control" id="recipient-name" name="internal" require>
+                              </div>
+                              <div class="form-group">
                                 <label for="recipient-name" class="col-form-label">Oggetto:</label>
                                 <input type="text" class="form-control" id="recipient-name" name="object" require>
                               </div>
@@ -72,10 +76,10 @@
                                 <label for="message-text" class="col-form-label">Richiesta:</label>
                                 <textarea class="form-control" id="message-text" name="request" require></textarea>
                               </div>
+                              <div class="modal-footer">
+                                <input type="submit" class="btn btn-outline-danger" value="Richiedi">
+                              </div>
                             </form>
-                          </div>
-                          <div class="modal-footer">
-                            <input type="submit" class="btn btn-outline-danger" value="Richiedi">
                           </div>
                         </div>
                     </div>
