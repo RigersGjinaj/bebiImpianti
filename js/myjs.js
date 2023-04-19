@@ -17,7 +17,6 @@ contact.addEventListener('click', function(){
 })
 
 regione.addEventListener('change', function(){
-    removeOptions(comune);
     removeOptions(provincia);
     var regioneScelta = regione.options[regione.selectedIndex].text
     var xhr = new XMLHttpRequest()
@@ -27,6 +26,7 @@ regione.addEventListener('change', function(){
     xhr.onload = function(){
         var text = xhr.response
         var obj = JSON.parse(text)
+        provincia.options[provincia.options.length] = new Option("--", "--");
         for (let i = 0; i < obj.length; i++) {
             provincia.options[provincia.options.length] = new Option(obj[i].nome, obj[i].nome);
         }
@@ -54,4 +54,4 @@ function removeOptions(selectElement) {
     for(i = L; i >= 0; i--) {
        selectElement.remove(i);
     }
- }
+}
