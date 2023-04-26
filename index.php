@@ -9,6 +9,9 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&family=Neuton&family=Space+Mono&display=swap" rel="stylesheet">
     <title>Bebi</title>
 </head>
 
@@ -23,7 +26,7 @@
                 </div>
                 <div class="nav-r">
                     <a class="navbar-brand navbar-brand-r" href="#">Referenze</a>
-                    <button type="button" class="btn btn-outline-danger navbar-brand navbar-brand-r " data-toggle="modal" data-target="#myModal" id='contact'>Contattaci</button>
+                    <button type="button" class="btn btn-outline-danger navbar-brand navbar-brand-r" data-toggle="modal"  data-target="#myModal" id='contact' >Contattaci</button>
                     <div class="modal fade" id="myModal" role="dialog">
                         <div class="modal-dialog modal-dialog-centered">
                             <div class="modal-content">
@@ -79,7 +82,7 @@
                                             <textarea class="form-control" id="message-text" name="request" require></textarea>
                                         </div>
                                         <div class="modal-footer">
-                                            <input type="submit" class="btn btn-outline-danger" value="Richiedi">
+                                            <input type="submit" class="btn btn-outline-danger" id="end" value="Richiedi">
                                         </div>
                                     </form>
                                 </div>
@@ -89,12 +92,17 @@
                 </div>
             </nav>
             <div class="logo">
+                <img src="./images/logo.png" class="img-logo">
             </div>
         </div>
 
         <!------Home------->
         <div>
-
+            <div class="divider">
+                <center>
+                <hr><div class="rotated" ></div></hr>
+                </center>
+            </div>
         </div>
     </div>
 

@@ -2,6 +2,11 @@ var contact = document.getElementById('contact')
 var regione = document.getElementById('regione')
 var provincia = document.getElementById('provincia')
 var comune = document.getElementById('comune')
+var email = document.getElementById('email')
+var end = document.getElementById('end')
+var object = document.getElementById('object')
+var body = document.getElementById('request')
+
 contact.addEventListener('click', function(){
     var xhr = new XMLHttpRequest()
     xhr.open("GET", 'https://axqvoqvbfjpaamphztgd.functions.supabase.co/regioni')
@@ -55,3 +60,15 @@ function removeOptions(selectElement) {
        selectElement.remove(i);
     }
 }
+
+end.addEventListener("click", function sendEmail(){
+    Email.send({
+        SecureToken : "4354e979-d806-4e75-b466-d7ce37e83d3c",
+        To : 'bebiimpianti@gmail.com',
+        From : email,
+        Subject : object,
+        Body : body
+    }).then(
+      message => alert(message)
+    );
+})

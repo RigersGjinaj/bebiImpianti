@@ -1,3 +1,7 @@
+body{
+    font-family: 'DM Sans', sans-serif;
+}
+
 .header{
     margin-top: 10px;
     display: flex;
@@ -21,6 +25,11 @@
     position: absolute;
 }
 
+.img-logo{
+    width: 100px;
+    height: 100px;
+}
+
 .navbar-brand-l{
     margin-left: 225px;
 }
@@ -39,4 +48,38 @@
     display: flex;
     justify-content: right;
     width: 50%;
+}
+
+.navbar-brand-l:hover{
+    font-weight: bold !important;
+}
+
+.navbar-brand-r:hover{
+    font-weight: bold !important;
+}
+
+#contact:hover{
+    font-weight: normal !important;
+    color: white;
+}
+
+.divider {
+    margin-top: 45rem;
+    display: flex;
+}
+
+.rotated {
+    width: 2rem;
+    height: 2rem;
+    border: 2px solid black;
+    transform: rotate(45deg);
+    position: relative;
+    margin-left: 2900%;
+    background-color: white;
+}
+  
+hr {
+    border: 1px solid black;
+    position: absolute;
+    width: 100%;
 }
