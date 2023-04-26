@@ -83,3 +83,8 @@ hr {
     position: absolute;
     width: 100%;
 }
+
+.maps-container {
+    position: absolute;
+    width: 50%;
+}

@@ -104,8 +104,13 @@
                 </center>
             </div>
         </div>
+        <!-----Maps------->
+        <div class="maps">
+            <center>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2879.0261087869676!2d11.227014400026817!3d43.81381784324639!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132a56e861b833f1%3A0x255c381929278c8c!2sBEBI%20SRL%20-%20Cooking%20Solutions!5e0!3m2!1sit!2sit!4v1682520146439!5m2!1sit!2sit" width="600" height="450" style="border:0;  border-radius: 15px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </center>
+        </div>
     </div>
-
     <script src="js/myjs.js"></script>
 </body>
 
