@@ -62,17 +62,17 @@
                                         </div>
                                         <div class="form-group">
                                             <label for="regione" class="col-form-label">Regione:</label>
-                                            <select name="regione" id="regione">
+                                            <select name="regione" id="regione" require>
                                             </select>
                                         </div>
                                         <div class="form-group">
                                             <label for="provincia" class="col-form-label">Provincia:</label>
-                                            <select name="provincia" id="provincia" disabled>
+                                            <select name="provincia" id="provincia" disabled require>
                                             </select>
                                         </div>
                                         <div class="form-group">
                                             <label for="comune" class="col-form-label">Comune:</label>
-                                            <select name="comune" id="comune" disabled>
+                                            <select name="comune" id="comune" disabled require>
                                             </select>
                                         </div>
                                         <div class="form-group">
